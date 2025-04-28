@@ -19,7 +19,7 @@
       background-color: rgba(0,0,0,0.2);
     }
     section {
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
     .banner h1 {
@@ -31,7 +31,7 @@
       margin-bottom: 30px;
     }
     .button {
-      padding: 15px 30px;
+      padding: 10px 30px;
       background: #16a34a;
       border: none;
       border-radius: 10px;
@@ -39,6 +39,10 @@
       font-size: 1.2em;
       cursor: pointer;
       text-decoration: none;
+    }
+    .copy-button {
+      background: #f59e0b;
+      margin-top: 10px;
     }
     .gallery img, .gallery video {
       max-width: 250px;
@@ -65,6 +69,16 @@
       background-color: rgba(0,0,0,0.3);
     }
   </style>
+  <script>
+    function copiarPix() {
+      const chavePix = "admistrativorbpages@gmail.com";
+      navigator.clipboard.writeText(chavePix).then(function() {
+        alert("Chave Pix copiada!");
+      }, function() {
+        alert("Falha ao copiar a chave Pix.");
+      });
+    }
+  </script>
 </head>
 <body>
   <header>Flash-do-Aviator</header>
@@ -106,15 +120,19 @@
     </ul>
     <p><strong>Não importa onde você joga, nossos sinais funcionam em qualquer site!</strong></p>
   </section>
-
+ 
   <section id="comprar">
     <h2>Adquira seu Acesso</h2>
     <p>Pagamento via Pix. Após pagamento, envie o comprovante no WhatsApp.</p>
     <p><strong>Chave Pix:</strong> admistrativorbpages@gmail.com</p>
+    <button class="button copy-button" onclick="copiarPix()">Copiar Chave Pix</button>
     <a href="https://api.whatsapp.com/send?phone=+5527997974777" target="_blank" class="button">Enviar Comprovante</a>
+
+    <h3>Ou pague via PagBank</h3>
+    <a href="https://pag.ae/7_BkX_B4p" target="_blank" class="button">Pagar com PagBank</a>
   </section>
 
-  <footer>
+  <footer> 
     Suporte: rb-desenvolvimentos@mail.com | Todos os direitos reservados - RbPages 2025
   </footer>
 </body>
