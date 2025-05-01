@@ -5,70 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flash-do-Aviator</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #4f46e5, #9333ea);
-      color: black;
-    }
-    header {
-      padding: 20px;
-      text-align: center;
-      font-size: 2em;
-      font-weight: bold;
-      background-color: rgba(0,0,0,0.2);
-    }
-    section {
-      padding: 50px 50px;
-      text-align: center;
-    }
-    .banner h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .banner p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    .button {
-      padding: 10px 30px;
-      background: #16a34a;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      font-size: 0.7em;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .copy-button {
-      background: #f59e0b;
-      margin-top: 10px;
-    }
-    .gallery img, .gallery video {
-      max-width: 250px;
-      margin: 10px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    }
-    .steps {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 600px;
-      margin: auto;
-    }
-    .step {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      background-color: rgba(0,0,0,0.3);
-    }
-  </style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('fotofundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+  header {
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.6);
+  }
+  section {
+    padding: 50px 50px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    margin: 20px;
+    border-radius: 15px;
+  }
+  .banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  .button {
+    padding: 10px 30px;
+    background: #16a34a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+  }
+  .copy-button {
+    background: #f59e0b;
+  }
+  .gallery img, .gallery video {
+    max-width: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  .step {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    background-color: rgba(0,0,0,0.7);
+  }
+</style>
   <script>
     function copiarPix() {
       const chavePix = "admistrativorbpages@gmail.com";
